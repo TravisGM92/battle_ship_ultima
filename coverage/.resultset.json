@@ -1,0 +1,65 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/board.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/cell.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/game.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/ship.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1615588789
+  }
+}
