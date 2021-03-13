@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Ship < ApplicationRecord
   validates_presence_of :name, :health
   has_many :cells
