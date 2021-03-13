@@ -1,0 +1,196 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/game.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/board.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/ship.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          4,
+          null,
+          4,
+          null,
+          null,
+          4,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/cell.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          4,
+          4,
+          4,
+          16,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/services/coordinates.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null,
+          1,
+          4,
+          0,
+          4,
+          1,
+          1,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          4,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          4,
+          4,
+          1,
+          null,
+          3,
+          null,
+          null,
+          null,
+          1,
+          4,
+          4,
+          1,
+          null,
+          3,
+          null,
+          null,
+          null,
+          1,
+          5,
+          5,
+          1,
+          null,
+          4,
+          null,
+          null,
+          null,
+          1,
+          3,
+          3,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null,
+          1,
+          3,
+          13,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1615655454
+  }
+}
