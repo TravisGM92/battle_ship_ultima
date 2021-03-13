@@ -5,6 +5,8 @@ class Cell < ApplicationRecord
   def self.create_coordinates(ship)
     coords = Coordinates.new({ship: ship, user: ship.user, board: ship.user.board})
     valid_coords = coords.valid_coords
-    require "pry"; binding.pry
+    valid_coords.each do |coordinate|
+      Cell.create!(coordinate: coordinate, state: 'S', ship_id: ship.id)
+    end
   end
 end
