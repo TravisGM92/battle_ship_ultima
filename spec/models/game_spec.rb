@@ -31,15 +31,16 @@ RSpec.describe Game, type: :model do
 
       expect(User.all).to be_empty
       start_game = game.start_game(game_data)
-      expect(User.where(name: 'George').name).to eq('George')
+      expect(User.find_by(name: 'George').name).to eq('George')
       expect(User.all).to_not be_empty
       expect(User.all.count).to eq(2)
 
       User.all.each do |user|
         expect(user.ships).to_not be_empty
-        expect(user.board).to_not be_empty
-        expect(user.board.cells).to_not be_empty
-        expect(user.ships.cells).to_not be_empty
+        expect(user.board).to_not eq([])
+        user.ships.each do |ship|
+          expect(ship.cells).to_not eq([])
+        end
       end
     end
   end
