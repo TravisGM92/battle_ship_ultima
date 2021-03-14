@@ -38,7 +38,7 @@ RSpec.describe 'Coordinates' do
   end
   it '.determine_direction' do
     coords = Coordinates.new(@data)
-    options = %w(horz vert)
+    options = %w[horz vert]
     expect(options.include?(coords.determine_direction)).to eq(true)
   end
   it '.find_next_up_coords' do
@@ -46,43 +46,76 @@ RSpec.describe 'Coordinates' do
     coordinates = coords.find_next_up_coords(['K1'])
     coordinates.each_with_index do |coord, index|
       if index == 0
-        expect(coord).to be_a(String)
         expect(coord).to eq('K1')
       elsif index == 1
-        expect(coord).to be_a(String)
         expect(coord).to eq('J1')
       else
-        expect(coord).to be_a(String)
         expect(coord).to eq('I1')
       end
+      expect(coord).to be_a(String)
     end
   end
 end
 
 RSpec.describe 'Coordinates' do
   before(:each) do
-  user = User.create!(name: 'George')
-  ship = Ship.create!(name: 'La Ship', health: 3, user_id: user.id)
-  board = Board.create!(user_id: user.id, size: '10X10')
-  @data = {
-    ship: ship,
-    board: board
-  }
-end
+    user = User.create!(name: 'George')
+    ship = Ship.create!(name: 'La Ship', health: 3, user_id: user.id)
+    board = Board.create!(user_id: user.id, size: '10X10')
+    @data = {
+      ship: ship,
+      board: board
+    }
+  end
   it '.find_next_down_coords' do
     coords = Coordinates.new(@data)
     coordinates = coords.find_next_down_coords(['A1'])
     coordinates.each_with_index do |coord, index|
       if index == 0
-        expect(coord).to be_a(String)
         expect(coord).to eq('A1')
       elsif index == 1
-        expect(coord).to be_a(String)
         expect(coord).to eq('B1')
       else
-        expect(coord).to be_a(String)
         expect(coord).to eq('C1')
       end
+      expect(coord).to be_a(String)
     end
+  end
+end
+
+RSpec.describe 'Coordinates' do
+  before(:each) do
+    @user = User.create!(name: 'George')
+    ship = Ship.create!(name: 'La Ship', health: 3, user_id: @user.id)
+    board = Board.create!(user_id: @user.id, size: '10X10')
+    @data = { ship: ship, board: board }
+  end
+  it '.first_coord with Cells being used' do
+    ('A'..'J').to_a.each do |letter|
+      x = 1
+      y = 2
+      if letter == 'A'
+        10.times do
+          Cell.create!(coordinate: "#{letter}#{y}", state: 'S', ship_id: @data[:ship].id)
+          y += 1
+        end
+      else
+        10.times do
+          Cell.create!(coordinate: "#{letter}#{x}", state: 'S', ship_id: @data[:ship].id)
+          x += 1
+        end
+      end
+    end
+    coords = Coordinates.new(@data)
+    expect(coords.first_coord).to eq('A1')
+  end
+
+  it '.used_cells' do
+    ship = Ship.create!(name: 'Leslie', health: 4, user_id: @user.id)
+    coords = Coordinates.new(@data)
+    expect(coords.used_cells).to be_empty
+    Cell.create!(coordinate: 'B1', state: 'S', ship_id: ship.id)
+    expect(coords.used_cells).to_not be_empty
+    expect(coords.used_cells).to eq(['B1'])
   end
 end
