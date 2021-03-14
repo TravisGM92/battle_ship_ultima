@@ -9,7 +9,7 @@ class Game < ApplicationRecord
 
   def start_game(data)
     user = User.create!(name: data[:user_name], game_id: Game.last.id)
-    computer = User.create!(name: 'COMPUTER', game_id: Game.last.id)
+    User.create!(name: 'COMPUTER', game_id: Game.last.id)
     prep_user({ user: user, board_size: data[:board_size] })
     prep_computer(data)
   end
