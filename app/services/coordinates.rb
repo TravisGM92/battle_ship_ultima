@@ -30,7 +30,7 @@ class Coordinates
   end
 
   def horizontal_coordinates(first)
-    if first[1..].to_i + (@ship.health - 1) < @board_size[0]
+    if first[1..-1].to_i + (@ship.health - 1) < @board_size[0]
       find_next_right_coords([first])
     else
       find_next_left_coords([first])
@@ -42,7 +42,7 @@ class Coordinates
     if cells.length == @ship.health
       cells
     else
-      find_next_right_coords(cells + ["#{row}#{cells[-1][1..].to_i + 1}"])
+      find_next_right_coords(cells + ["#{row}#{cells[-1][1..-1].to_i + 1}"])
     end
   end
 
@@ -51,12 +51,12 @@ class Coordinates
     if cells.length == @ship.health
       cells
     else
-      find_next_left_coords(cells + ["#{row}#{cells[-1][1..].to_i - 1}"])
+      find_next_left_coords(cells + ["#{row}#{cells[-1][1..-1].to_i - 1}"])
     end
   end
 
   def find_next_down_coords(cells)
-    column = cells[0][1..]
+    column = cells[0][1..-1]
     if cells.length == @ship.health
       cells
     else
@@ -65,7 +65,7 @@ class Coordinates
   end
 
   def find_next_up_coords(cells)
-    column = cells[0][1..]
+    column = cells[0][1..-1]
     if cells.length == @ship.health
       cells
     else
