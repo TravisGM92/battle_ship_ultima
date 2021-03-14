@@ -9,7 +9,7 @@
           null
         ]
       },
-      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/board.rb": {
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/user.rb": {
         "lines": [
           null,
           null,
@@ -26,57 +26,6 @@
           null,
           1,
           1,
-          null
-        ]
-      },
-      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/cell.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          2,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/game.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
           null
         ]
       },
@@ -105,7 +54,7 @@
           null
         ]
       },
-      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/user.rb": {
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/board.rb": {
         "lines": [
           null,
           null,
@@ -130,15 +79,15 @@
           null,
           null,
           1,
-          1,
+          0,
           null,
           null,
           1,
-          1,
+          0,
           null,
           null,
           1,
-          1,
+          0,
           null,
           null,
           1,
@@ -150,19 +99,10 @@
           null,
           null,
           1,
-          1,
-          1,
-          null,
+          0,
           0,
           null,
-          null,
-          null,
-          1,
-          2,
-          2,
-          1,
-          null,
-          1,
+          0,
           null,
           null,
           null,
@@ -194,9 +134,18 @@
           null,
           null,
           1,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
           1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           0,
           null,
@@ -207,8 +156,63 @@
           null,
           null
         ]
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/cell.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/travisgm/personal_project/battle_ship_ultima/battle_ship_ultima/app/models/game.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1615688426
+    "timestamp": 1615738967
   }
 }
