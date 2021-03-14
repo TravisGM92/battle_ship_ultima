@@ -56,14 +56,33 @@ RSpec.describe 'Coordinates' do
         expect(coord).to eq('I1')
       end
     end
+  end
+end
 
-    # def find_next_up_coords(cells)
-    #   column = cells[0][1..-1]
-    #   if cells.length == @ship.health
-    #     cells
-    #   else
-    #     find_next_up_coords(cells + ["#{@alphabet[@alphabet.index((cells[-1][0]).to_s) - 1]}#{column}"])
-    #   end
-    # end
+RSpec.describe 'Coordinates' do
+  before(:each) do
+  user = User.create!(name: 'George')
+  ship = Ship.create!(name: 'La Ship', health: 3, user_id: user.id)
+  board = Board.create!(user_id: user.id, size: '10X10')
+  @data = {
+    ship: ship,
+    board: board
+  }
+end
+  it '.find_next_down_coords' do
+    coords = Coordinates.new(@data)
+    coordinates = coords.find_next_down_coords(['A1'])
+    coordinates.each_with_index do |coord, index|
+      if index == 0
+        expect(coord).to be_a(String)
+        expect(coord).to eq('A1')
+      elsif index == 1
+        expect(coord).to be_a(String)
+        expect(coord).to eq('B1')
+      else
+        expect(coord).to be_a(String)
+        expect(coord).to eq('C1')
+      end
+    end
   end
 end
