@@ -13,3 +13,19 @@ RSpec.describe Ship, type: :model do
     it { should belong_to :user }
   end
 end
+
+RSpec.describe Ship, type: :model do
+  describe 'methods' do
+    it '.create_ships()' do
+      user = User.create!(name: 'La Dude')
+      board = Board.create!(user_id: user.id, size: '10X10')
+      data = {
+        board: board,
+        user: user
+      }
+      expect(Ship.all).to be_empty
+      expect(Ship.create_ships(data)).to eq(2)
+      expect(Ship.all.count).to eq(2)
+    end
+  end
+end
