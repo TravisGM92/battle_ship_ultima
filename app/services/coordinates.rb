@@ -4,12 +4,18 @@ class Coordinates
   def initialize(data)
     @ship = data[:ship]
     @board_size = data[:board].size.split('X').map(&:to_i)
-    @letters_available = ('A'..'Z').to_a[0..@board_size[1]]
+    @letters_available = ('A'..'Z').to_a[0..@board_size[1]-1]
     @alphabet = ('A'..'Z').to_a
     @numbers_available = (1..@board_size[0]).to_a
   end
 
   def valid_coords
+    if @ship.health == 1
+      [first_coord]
+    else
+      result = find_next_coordinates(first_coord)
+      used_cells.each { |cell| result.include?(cell) ? valid_coords : result}
+    end
     @ship.health == 1 ? [first_coord] : find_next_coordinates(first_coord)
   end
 
@@ -83,6 +89,13 @@ class Coordinates
   end
 
   def used_cells
-    @ship.user.ships.flat_map { |ship| ship.cells.map(&:coordinate) }
+    result = []
+    ship_ids = Ship.where(user_id: @ship.user.id).pluck(:id)
+    ship_ids.each do |id|
+      if !Cell.where(ship_id: id).empty?
+        result << Cell.where(ship_id: id).pluck(:coordinate)
+      end
+    end
+    return result.flatten
   end
 end
