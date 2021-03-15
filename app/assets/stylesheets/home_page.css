@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+@media only screen and (max-width: 1130px) {
+  .desktop-view {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1131px) {
+  .mobile-view {
+    display: none;
+  }
+}
