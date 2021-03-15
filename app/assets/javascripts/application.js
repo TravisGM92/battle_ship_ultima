@@ -20,3 +20,10 @@ window.onload = function () {
 function appeardiv() {
   document.getElementById('message1').style.display= "block";
 };
+
+
+$(document).ready(function( $ ) {
+  AOS.init({
+    easing: 'ease-in-quad',
+  });
+});
