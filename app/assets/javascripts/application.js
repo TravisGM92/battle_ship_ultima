@@ -13,3 +13,10 @@
 //= require rails-ujs
 //= require activestorage
 //= require_tree .
+
+window.onload = function () {
+            setTimeout(appeardiv,500);
+        };
+function appeardiv() {
+  document.getElementById('message1').style.display= "block";
+};
