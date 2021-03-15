@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+@media only screen and (min-width: 1131px) {
+  .mobile-view {
+    display: none;
+  }
+
+  .desktop-view #background-space-gif {
+    z-index: -1;
+    position: absolute;
+    width: 105%;
+    margin-left: -10px;
+    margin-top: -20px;
+  }
+
+  .welcome-banner p {
+    position: absolute;
+    z-index: 1;
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P';
+    outline: none;
+  }
+
+  .message1 {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 300px;
+    margin-left: 9%;
+    width: 80%;
+    transform: scaleX(0) scaleY(0);
+    border: 1px rgb(80, 212, 26) solid;
+    border-radius: 5px;
+    box-shadow:
+      inset 0 0 20px rgb(169, 255, 134),
+      0 0 30px rgb(80, 212, 26);
+    animation: expand 1.5s ease forwards;
+    animation-delay: .25s;
+  }
+
+  .message1 p {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P';
+  }
+
+  @keyframes expand {
+    to { transform: scaleX(1); }
+    to { transform: scaleY(1); }
+  }
+
+}
