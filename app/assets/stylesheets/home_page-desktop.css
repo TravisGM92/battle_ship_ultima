@@ -13,10 +13,16 @@
     margin-top: -20px;
   }
 
+  #about-link {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+  }
+
   .welcome-banner p {
     position: absolute;
     z-index: 1;
-    margin-top: 50px;
+    margin-top: 70px;
     font-size: 50px;
     color: white;
     text-align: center;
