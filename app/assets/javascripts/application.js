@@ -12,11 +12,26 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require jquery3
+//= require jquery_ujs
 //= require_tree .
 
-window.onload = function () {
-            setTimeout(appeardiv,500);
-        };
-function appeardiv() {
-  document.getElementById('message1').style.display= "block";
-};
+// window.onload = function () {
+//             setTimeout(appeardiv,500);
+//         };
+// function appeardiv() {
+//   document.getElementById('message1').style.display= "block";
+// };
+
+
+$(document).ready(function( $ ) {
+  AOS.init({
+    easing: 'ease-in-quad',
+  });
+});
+
+$(document).ready(function(){
+  $("#play-button").click(function(){
+    $("#message").toggle();
+  });
+});

@@ -4,4 +4,53 @@
   .desktop-view {
     display: none;
   }
+
+  .mobile-view {
+    width: 100%;
+  }
+
+  .welcome-banner {
+    text-align: center;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 85px;
+    font-family: 'Press Start 2P';
+    font-size: 40px;
+    color: white;
+  }
+
+  #message {
+    color: white;
+    z-index: 1px;
+    display: none;
+  }
+
+  #play-button {
+    margin-top: 250px;
+    margin-left: 31%;
+    width: 360px;
+    height: 110px;
+    font-size: 60px;
+    font-family: 'Press Start 2P';
+  }
+
+  #mobile-background-space-gif {
+    z-index: -1;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -8px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .exclaim {
+    animation-name: blink;
+    animation-duration: .75s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes blink {
+    from { color: green }
+    to { color: rgba(0, 111, 41, 0.2) }
+  }
 }
