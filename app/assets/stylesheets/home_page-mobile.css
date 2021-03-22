@@ -14,7 +14,7 @@
     position: absolute;
     margin-top: 100px;
     font-family: 'Press Start 2P';
-    font-size: 50px;
+    font-size: 70px;
     color: white;
   }
 
@@ -25,11 +25,11 @@
   }
 
   #play-button {
-    margin-top: 350px;
+    margin-top: 380px;
     margin-left: 26%;
-    width: 400px;
-    height: 130px;
-    font-size: 65px;
+    width: 410px;
+    height: 150px;
+    font-size: 70px;
     font-family: 'Press Start 2P';
   }
 
@@ -56,10 +56,11 @@
   .play-form {
     width: 770px;
     margin-top: 100px;
-    margin-left: 65px;
+    margin-left: 60px;
   }
 
   #user_name_input {
+    margin-left: 20px;
     font-size: 45px;
     font-family: 'Press Start 2P';
   }
@@ -78,8 +79,8 @@
   #lets-play-button {
     margin-top: 60px;
     margin-left: 36%;
-    width: 230px;
-    height: 100px;
+    width: 250px;
+    height: 120px;
     font-size: 40px;
     font-family: 'Press Start 2p';
   }
