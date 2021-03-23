@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body.game-play #background-space-gif {
+  z-index: -1;
+  position: absolute;
+  width: 105%;
+  margin-left: -10px;
+  margin-top: -20px;
+}
