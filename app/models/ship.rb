@@ -10,12 +10,16 @@ class Ship < ApplicationRecord
     if board_size[0] <= 10 && board_size[1] <= 10
       2.times do
         ship = Ship.create!(
-          name: Faker::Name.first_name,
+          name: find_name.shuffle.pop,
           health: (1..5).to_a.shuffle.pop,
           user_id: data[:user].id
         )
         Cell.create_coordinates(ship)
       end
     end
+  end
+
+  def self.find_name
+    %w(Keith John Tim Tom Tamara Lexi Samantha Sam Josh Miranda Lily Tucker Eli Caleb Melissa Marissa Marc Mark Matt Yusef)
   end
 end
