@@ -27,7 +27,7 @@
   #play-button {
     margin-top: 450px;
     margin-left: 26%;
-    width: 410px;
+    width: 420px;
     height: 150px;
     font-size: 70px;
     font-family: 'Press Start 2P';
@@ -44,7 +44,7 @@
 
   .exclaim {
     animation-name: blink;
-    animation-duration: .75s;
+    animation-duration: .8s;
     animation-iteration-count: infinite;
   }
 
