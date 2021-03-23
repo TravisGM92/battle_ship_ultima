@@ -22,6 +22,10 @@ window.onload = function () {
 function appeardiv() {
   document.getElementById('message1').style.display= "block";
 };
+function appeardiv() {
+  document.getElementById('user-board').style.display= "block";
+  document.getElementById('computer-board').style.display= "block";
+};
 
 
 $(document).ready(function( $ ) {
