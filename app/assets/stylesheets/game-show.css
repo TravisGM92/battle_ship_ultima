@@ -12,11 +12,11 @@ body.game-play #background-space-gif {
   display: none;
   position: absolute;
   z-index: 1;
-  margin-top: 700px;
+  margin-top: 800px;
   margin-left: 9%;
   margin-bottom: 100px;
   width: 80%;
-  height: 600px;
+  height: 650px;
   transform: scaleX(0) scaleY(0);
   border: 1px rgb(80, 212, 26) solid;
   border-radius: 5px;
@@ -34,7 +34,7 @@ body.game-play #background-space-gif {
   margin-top: 100px;
   margin-left: 9%;
   width: 80%;
-  height: 600px;
+  height: 650px;
   transform: scaleX(0) scaleY(0);
   border: 1px rgb(80, 212, 26) solid;
   border-radius: 5px;
