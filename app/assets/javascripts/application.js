@@ -18,11 +18,12 @@
 
 window.onload = function () {
             setTimeout(appeardiv,500);
+            setTimeout(appearotherdiv,500);
         };
 function appeardiv() {
   document.getElementById('message1').style.display= "block";
 };
-function appeardiv() {
+function appearotherdiv() {
   document.getElementById('user-board').style.display= "block";
   document.getElementById('computer-board').style.display= "block";
 };
